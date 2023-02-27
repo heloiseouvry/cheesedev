@@ -47,6 +47,7 @@ header h2 {
 main {
   flex: 1;
   overflow: auto;
+  scroll-behavior: smooth;
   border-width: 3px 0;
   border-style: solid;
   border-color: hsl(264, 4%, 25%);
