@@ -1,0 +1,6 @@
+[submodule "frontend-mentor-qr-code"]
+	path = ./projects/frontend-mentor-qr-code
+	url = https://github.com/heloiseouvry/frontend-mentor-qr-code
+[submodule "frontend-mentor-advice-generator"]
+	path = ./projects/frontend-mentor-advice-generator
+	url = https://github.com/heloiseouvry/frontend-mentor-advice-generator

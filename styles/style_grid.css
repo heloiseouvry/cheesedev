@@ -1,0 +1,93 @@
+body {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background-color: hsl(44, 222, 86);
+  font-family: "Lato", sans-serif;
+  color: hsl(264, 4%, 25%);
+  background-color: hsl(44, 22%, 86%);
+}
+
+/* HEADER */
+
+header {
+  display: grid;
+  grid-template-columns: 50px repeat(3, 1fr) 50px ;
+  grid-template-rows: 50px repeat(4, 1fr) 50px;
+  grid-template-areas: 
+  ". . . . ."
+  ". logo title title ."
+  ". logo title title ."
+  ". logo title title ."
+  ". logo subtitle subtitle ."
+  ". . . . .";
+}
+
+header h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 30px;
+  grid-area: title;
+  align-content: space-between;
+}
+
+header .divider {
+  grid-area: title;
+  width: 100px;
+}
+
+header h2 {
+  font-family: "Happy Monkey", cursive;
+  grid-area: subtitle;
+}
+
+header img {
+  grid-area: logo;
+}
+
+/* MAIN */
+main {
+  background-color: hsl(42, 95%, 63%);
+  border-width: 3px 0;
+  border-style: solid;
+  border-color: hsl(264, 4%, 25%);
+  padding: 20px;
+}
+
+main h1 {
+  font-family: "Happy Monkey", cursive;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* GENERAL */
+.divider {
+
+}
+
+/* Code from the internet to create a symbol for external links */
+a[target="_blank"] {
+  position: relative;
+}
+
+a[target="_blank"]:after {
+  position: absolute;
+  top: 3px;
+  right: -15px;
+  content: "\1f855";
+  font-size: 13px;
+  color: black;
+  line-height: 3px;
+  height: 5px;
+  width: 5px;
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+}
+a[target="_blank"]:before {
+  position: absolute;
+  top: 4px;
+  right: -15px;
+  content: " ";
+  border: 1px solid black;
+  width: 8px;
+  height: 8px;
+}
