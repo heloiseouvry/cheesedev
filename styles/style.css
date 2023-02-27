@@ -19,7 +19,7 @@ body {
 
 /* HEADER */
 
-header {
+header{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,6 +41,11 @@ header h1 {
 
 header h2 {
   font-family: "Happy Monkey", cursive;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* MAIN */
