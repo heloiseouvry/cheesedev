@@ -18,18 +18,18 @@
     <header>
       <a href="/">
         <img src="./static/logo_extended.svg" alt="Logo" />
-        </a>
-        <div class="title">
-          <img class="divider" src="./static/divider.svg" alt="Divider" />
-          <h1><a href="/">cheesedev</a></h1>
-          <img class="divider" src="./static/divider.svg" alt="Divider" />
-          <h2>(she's dev)</h2>
-          <nav>
-            <a href="#about-me">About me</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </div>
+      </a>
+      <div class="title">
+        <img class="divider" src="./static/divider.svg" alt="Divider" />
+        <h1><a href="/">cheesedev</a></h1>
+        <img class="divider" src="./static/divider.svg" alt="Divider" />
+        <h2>(she's dev)</h2>
+        <nav>
+          <a href="#about-me">About me</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </header>
     <main>
       <section id="about-me">
@@ -79,19 +79,17 @@
       <section id="contact">
         <h1>Contact</h1>
         <img class="divider" alt="Divider" />
-        <p>Ils chantent pas vos espions. Moi, prochaine bataille rangée je reste à Kaamelott.</p>
-
-        <p>
-          Oui… Ben vous… Occupez vous d’les faire ça s’ra déjà pas mal! Ils sont encore là, ces cons! Mais bien sûr, comme ça au lieu de confondre les
-          signes, ils auraient confondu les couleurs!
-        </p>
-
-        <p>
-          Non mais c’est dingue cette histoire! C’est pas parce que vous faites des tartes pour des petits enfants qui existent pas que je dois les
-          amener à la pêche, non? P’tite pucelle! Un chef de guerre qui commande plus c’est pas bon. Il va déprimer, il va s’mettre à bouffer, il va
-          prendre quarante livres! Mais attendez… Y a une table et des sièges et j’devrais m’farcir toutes les notes à ratifier debout? Droit devant,
-          en plein dans leurs tronches.
-        </p>
+        <form action="POST" name="contact-form">
+          <label>
+            Email
+            <input required type="email" name="contact-email" id="contact-email" placeholder="Email" />
+          </label>
+          <label>
+            Message
+            <textarea required name="contact-message" id="contact-message" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+          </label>
+          <button type="submit">Submit</button>
+        </form>
       </section>
     </main>
     <footer>cheesedev 2023</footer>
