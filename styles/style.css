@@ -187,6 +187,13 @@ button[type="submit"]:focus {
   font-weight: bold;
 }
 
+button[type="submit"]:active {
+  background-color: var(--primary-color-500);
+  color: var(--primary-color-100);
+  font-weight: bold;
+  box-shadow: 0 0 0 3px var(--primary-color-200);
+}
+
 /*  
 ========================================================================
 FOOTER
