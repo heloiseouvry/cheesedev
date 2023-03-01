@@ -247,6 +247,10 @@ GENERAL
   content: url("../static/divider_white.svg");
 }
 
+.flip-horizontally {
+  transform: scaleX(-1);
+}
+
 /* Code from the internet to create a symbol for external links */
 a[target="_blank"] {
   position: relative;

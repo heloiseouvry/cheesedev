@@ -99,6 +99,7 @@
     <script>
       const darkModeButton = document.querySelector(".dark-mode-icon");
       darkModeButton.addEventListener("click", function () {
+        darkModeButton.classList.toggle("flip-horizontally");
         document.body.classList.toggle("dark-theme");
       });
     </script>
