@@ -1,4 +1,6 @@
 :root {
+  color-scheme: light dark;
+
   --primary-hue: 42;
   --primary-saturation: 95%;
   --primary-color: hsl(var(--primary-hue), var(--primary-saturation), 63%);
