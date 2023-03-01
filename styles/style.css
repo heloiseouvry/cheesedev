@@ -81,6 +81,29 @@ header a {
   color: inherit;
 }
 
+/* ------------------------------------------------------------------------ 
+Nav
+------------------------------------------------------------------------ */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+nav a {
+  background-color: var(--primary-color-200);
+  color: var(--primary-color-500);
+  padding: 5px 12px;
+  border-radius: 30px;
+  font-size: 10px;
+}
+
+nav a:focus {
+  background-color: var(--primary-color-100);
+  font-weight: bold;
+}
+
 /*  
 ========================================================================
 MAIN
