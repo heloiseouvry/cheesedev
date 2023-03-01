@@ -207,7 +207,7 @@ GENERAL
 
 :focus {
   outline: none;
-  box-shadow: 0 0 0 3px hsl(39, 55%, 28%);
+  box-shadow: 0 0 0 3px var(--primary-color-200);
 }
 
 .divider {
