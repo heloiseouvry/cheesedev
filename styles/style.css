@@ -83,6 +83,13 @@ header a {
   color: inherit;
 }
 
+.dark-mode-icon {
+  align-self: self-start;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+}
+
 /* ------------------------------------------------------------------------ 
 Nav
 ------------------------------------------------------------------------ */
@@ -203,7 +210,6 @@ button[type="submit"] {
   border: none;
   border-radius: 5px;
   padding: 12px 20px;
-  cursor: pointer;
 }
 
 button[type="submit"]:hover,
@@ -233,6 +239,10 @@ footer {
 GENERAL
 ======================================================================== 
 */
+
+button {
+  cursor: pointer;
+}
 
 :focus {
   outline: none;
