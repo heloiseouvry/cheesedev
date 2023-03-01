@@ -1,7 +1,27 @@
 :root {
-  --primary-color: hsl(42, 95%, 63%);
-  --secondary-color: hsl(42, 22%, 86%);
-  --tertiary-color: hsl(42, 4%, 25%);
+  --primary-hue: 42;
+  --primary-saturation: 95%;
+  --primary-color: hsl(var(--primary-hue), var(--primary-saturation), 63%);
+  --primary-color-100: hsl(var(--primary-hue), var(--primary-saturation), 10%);
+  --primary-color-200: hsl(var(--primary-hue), var(--primary-saturation), 25%);
+  --primary-color-300: hsl(var(--primary-hue), var(--primary-saturation), 50%);
+  --primary-color-400: hsl(var(--primary-hue), var(--primary-saturation), 75%);
+  --primary-color-500: hsl(var(--primary-hue), var(--primary-saturation), 85%);
+
+  --light-color: hsl(var(--primary-hue), 22%, 86%);
+  --dark-color: hsl(var(--primary-hue), 4%, 25%);
+
+  --gray-saturation: 20%;
+  --gray-100: hsl(var(--primary-hue), var(--gray-saturation), 10%);
+  --gray-200: hsl(var(--primary-hue), var(--gray-saturation), 20%);
+  --gray-300: hsl(var(--primary-hue), var(--gray-saturation), 30%);
+  --gray-400: hsl(var(--primary-hue), var(--gray-saturation), 40%);
+  --gray-500: hsl(var(--primary-hue), var(--gray-saturation), 50%);
+  --gray-600: hsl(var(--primary-hue), var(--gray-saturation), 60%);
+  --gray-700: hsl(var(--primary-hue), var(--gray-saturation), 70%);
+  --gray-800: hsl(var(--primary-hue), var(--gray-saturation), 80%);
+  --gray-900: hsl(var(--primary-hue), var(--gray-saturation), 90%);
+
   --main-font: "Lato", sans-serif;
   --title-font: "Montserrat Alternates", sans-serif;
   --subtitle-font: "Happy Monkey", cursive;
@@ -20,8 +40,8 @@ body {
   align-content: center;
   justify-content: center;
   font-family: var(--main-font);
-  color: var(--tertiary-color);
-  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  background-color: var(--light-color);
   max-height: 100%;
   max-width: 100%;
 }
@@ -44,7 +64,7 @@ header .title {
 }
 
 header h1 {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: var(--title-font);
   font-size: 30px;
 }
 
@@ -64,7 +84,7 @@ main {
   scroll-behavior: smooth;
   border-width: 3px 0;
   border-style: solid;
-  border-color: hsl(264, 4%, 25%);
+  border-color: var(--dark-color);
 }
 
 /* MAIN > Section */
@@ -78,16 +98,16 @@ section {
   gap: 20px;
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-bottom-color: var(--tertiary-color);
+  border-bottom-color: var(--dark-color);
 }
 
 main section:nth-child(2n + 1) {
-  background-color: hsl(42, 95%, 63%);
+  background-color: var(--primary-color);
 }
 
 main section:nth-child(2n) {
-  background-color: hsl(39, 55%, 28%);
-  color: hsl(44, 22%, 86%);
+  background-color: var(--primary-color-200);
+  color: var(--light-color);
 }
 
 main section:last-child {
@@ -122,16 +142,16 @@ form[name="contact-form"] > label {
 }
 
 form[name="contact-form"] > label > * {
-  background-color: var(--secondary-color);
+  background-color: var(--light-color);
   border: none;
-  border-bottom: 2px solid var(--tertiary-color);
+  border-bottom: 2px solid var(--dark-color);
   border-radius: 5px 0 5px 0;
   padding: 10px 5px;
   transition: box-shadow 0.15s ease-in-out;
 }
 
 form[name="contact-form"] > label > *:focus {
-  background-color: hsl(44, 22%, 92%);
+  background-color: var(--light-color);
 }
 
 form[name="contact-form"] > label:has(*:focus) {
@@ -139,8 +159,8 @@ form[name="contact-form"] > label:has(*:focus) {
 }
 
 button[type="submit"] {
-  background-color: hsl(39, 55%, 28%);
-  color: var(--secondary-color);
+  background-color: var(--primary-color-200);
+  color: var(--light-color);
   border: none;
   border-radius: 5px;
   padding: 12px 20px;
