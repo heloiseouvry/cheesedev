@@ -51,9 +51,9 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     fill="var(--dark-color)">
     <path
-       fill="var(--dark-color)"
        d="m41.61 0.070467c-1.0405-0.21261-38.873 0.11689-40.81 0.18842-1.1278 0.04165-1.0279 0.4435 0.0793 0.49503 3.0704 0.1429 39.474-0.1394 40.846-0.20851 1.0539-0.05308 0.55333-0.3327-0.11552-0.47495 0-3e-6 7.2e-5 0 7.2e-5 0z"
        id="path983-5-0-9"
        sodipodi:nodetypes="ssssss"
