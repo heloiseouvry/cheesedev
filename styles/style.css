@@ -48,6 +48,23 @@ body {
   max-width: 100%;
 }
 
+body.dark-theme {
+  --primary-saturation: 70%;
+  --primary-color: hsl(var(--primary-hue), var(--primary-saturation), 20%);
+  --primary-color-100: hsl(var(--primary-hue), var(--primary-saturation), 85%);
+  --primary-color-200: hsl(var(--primary-hue), var(--primary-saturation), 75%);
+  --primary-color-300: hsl(var(--primary-hue), var(--primary-saturation), 50%);
+  --primary-color-400: hsl(var(--primary-hue), var(--primary-saturation), 25%);
+  --primary-color-500: hsl(var(--primary-hue), var(--primary-saturation), 10%);
+
+  --dark-color: hsl(var(--primary-hue), 22%, 86%);
+  --light-color: hsl(var(--primary-hue), 4%, 25%);
+}
+
+.inverted {
+  --dark-color: var(--light-color)
+}
+
 /*  
 ========================================================================
 HEADER
