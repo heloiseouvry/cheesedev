@@ -11,7 +11,7 @@
    height="3"
    viewBox="0 0 42.333332 0.79374998"
    version="1.1"
-   id="svg1547"
+   id="divider"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
    sodipodi:docname="divider.svg">
   <defs
@@ -53,8 +53,8 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#403e43;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.59235;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000"
-       d="m 41.609827,0.07046706 c -1.040492,-0.212607 -38.8730976,0.116886 -40.8100306,0.188423 -1.12776,0.04165 -1.027877,0.443503 0.0793,0.495032 3.070367,0.142895 39.4740616,-0.139398 40.8462086,-0.208507 1.0539,-0.05308 0.553334,-0.332702 -0.115515,-0.474948 0,-3e-6 7.2e-5,0 7.2e-5,0 z"
+       fill="var(--dark-color)"
+       d="m41.61 0.070467c-1.0405-0.21261-38.873 0.11689-40.81 0.18842-1.1278 0.04165-1.0279 0.4435 0.0793 0.49503 3.0704 0.1429 39.474-0.1394 40.846-0.20851 1.0539-0.05308 0.55333-0.3327-0.11552-0.47495 0-3e-6 7.2e-5 0 7.2e-5 0z"
        id="path983-5-0-9"
        sodipodi:nodetypes="ssssss"
        inkscape:export-xdpi="96"
