@@ -238,6 +238,7 @@ form[name="contact-form"] > label {
 
 form[name="contact-form"] > label > * {
   background-color: var(--background-color);
+  color: var(--surface-color);
   border: none;
   border-bottom: 2px solid var(--surface-color);
   border-radius: 5px 0 5px 0;
