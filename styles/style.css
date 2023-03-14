@@ -51,13 +51,17 @@ body {
 }
 
 body.dark-theme {
-  --primary-saturation: 70%;
-  --primary-color: hsl(var(--primary-hue), 16%, 18%);
-  --primary-color-100: hsl(var(--primary-hue), var(--primary-saturation), 85%);
-  --primary-color-200: hsl(var(--primary-hue), 11%, 24%);
-  --primary-color-300: hsl(var(--primary-hue), var(--primary-saturation), 50%);
-  --primary-color-400: hsl(var(--primary-hue), var(--primary-saturation), 25%);
-  --primary-color-500: hsl(var(--primary-hue), var(--primary-saturation), 10%);
+  --primary-color: hsl(var(--primary-hue), 95%, 75%);
+
+  --primary-color-enabled: hsl(var(--primary-hue), 27%, 40%);
+  --primary-color-hovered: hsl(var(--primary-hue), 21%, 45%);
+  --primary-color-focused: hsl(var(--primary-hue), 20%, 47%);
+  --primary-color-disabled: hsl(var(--primary-hue), 16%, 37%);
+
+  --primary-color-variant-light: hsl(var(--primary-hue), 23%, 29%);
+  --primary-color-variant-dark: hsl(var(--primary-hue), 37%, 20%);
+  --primary-color-overlay-7: hsl(var(--primary-hue), 16%, 18%);
+  --primary-color-overlay-14: hsl(var(--primary-hue), 11%, 24%);
 
   --surface-color: hsl(var(--primary-hue), 22%, 86%);
   --background-color: hsl(var(--primary-hue), 25%, 12%);
@@ -136,6 +140,19 @@ nav a:focus {
   font-weight: bold;
 }
 
+body.dark-theme nav a {
+  background-color: var(--primary-color-enabled);
+  color: var(--background-color);
+}
+
+body.dark-theme nav a:hover {
+  background-color: var(--primary-color-hovered);
+}
+
+body.dark-theme nav a:focus {
+  background-color: var(--primary-color-focused);
+}
+
 /*  
 ========================================================================
 MAIN
@@ -175,6 +192,15 @@ main section:nth-child(2n + 1) {
 main section:nth-child(2n) {
   background-color: var(--primary-color-200);
   color: var(--background-color);
+}
+
+body.dark-theme main section:nth-child(2n + 1) {
+  background-color: var(--primary-color-variant-light);
+}
+
+body.dark-theme main section:nth-child(2n) {
+  background-color: var(--primary-color-variant-dark);
+  color: inherit;
 }
 
 main section:last-child {
@@ -245,6 +271,19 @@ button[type="submit"]:active {
   box-shadow: 0 0 0 3px var(--primary-color-500);
 }
 
+body.dark-theme button[type="submit"] {
+  background-color: var(--primary-color-enabled);
+  color: var(--background-color);
+}
+
+body.dark-theme button[type="submit"]:hover {
+  background-color: var(--primary-color-hovered);
+}
+
+body.dark-theme button[type="submit"]:focus {
+  background-color: var(--primary-color-focused);
+}
+
 /*  
 ========================================================================
 FOOTER
@@ -270,6 +309,11 @@ button {
 :focus {
   outline: none;
   box-shadow: 0 0 0 3px var(--primary-color-200);
+}
+
+body.dark-theme :focus {
+  outline: none;
+  box-shadow: 0 0 0 1px white;
 }
 
 .divider {
