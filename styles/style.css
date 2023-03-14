@@ -12,6 +12,7 @@
 
   --background-color: hsl(var(--primary-hue), 22%, 86%);
   --surface-color: hsl(var(--primary-hue), 4%, 25%);
+  --header-color: var(--surface-color);
 
   --gray-saturation: 20%;
   --gray-100: hsl(var(--primary-hue), var(--gray-saturation), 10%);
@@ -60,6 +61,7 @@ body.dark-theme {
 
   --surface-color: hsl(var(--primary-hue), 22%, 86%);
   --background-color: hsl(var(--primary-hue), 25%, 12%);
+  --header-color: hsl(var(--primary-hue), 19%, 70%);
 
   font-weight: 400;   /* TODO: Choose a variable font to take into account the weight diff */
 }
@@ -80,6 +82,7 @@ header {
   justify-content: center;
   gap: 20px;
   margin: 30px;
+  color: var(--header-color);
 }
 
 header .title {
