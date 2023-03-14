@@ -10,8 +10,8 @@
   --primary-color-400: hsl(var(--primary-hue), var(--primary-saturation), 75%);
   --primary-color-500: hsl(var(--primary-hue), var(--primary-saturation), 85%);
 
-  --light-color: hsl(var(--primary-hue), 22%, 86%);
-  --dark-color: hsl(var(--primary-hue), 4%, 25%);
+  --background-color: hsl(var(--primary-hue), 22%, 86%);
+  --surface-color: hsl(var(--primary-hue), 4%, 25%);
 
   --gray-saturation: 20%;
   --gray-100: hsl(var(--primary-hue), var(--gray-saturation), 10%);
@@ -42,8 +42,8 @@ body {
   align-content: center;
   justify-content: center;
   font-family: var(--main-font);
-  color: var(--dark-color);
-  background-color: var(--light-color);
+  color: var(--surface-color);
+  background-color: var(--background-color);
   max-height: 100%;
   max-width: 100%;
   font-weight: 500;
@@ -51,21 +51,21 @@ body {
 
 body.dark-theme {
   --primary-saturation: 70%;
-  --primary-color: hsl(var(--primary-hue), var(--primary-saturation), 20%);
+  --primary-color: hsl(var(--primary-hue), 16%, 18%);
   --primary-color-100: hsl(var(--primary-hue), var(--primary-saturation), 85%);
-  --primary-color-200: hsl(var(--primary-hue), var(--primary-saturation), 75%);
+  --primary-color-200: hsl(var(--primary-hue), 11%, 24%);
   --primary-color-300: hsl(var(--primary-hue), var(--primary-saturation), 50%);
   --primary-color-400: hsl(var(--primary-hue), var(--primary-saturation), 25%);
   --primary-color-500: hsl(var(--primary-hue), var(--primary-saturation), 10%);
 
-  --dark-color: hsl(var(--primary-hue), 22%, 86%);
-  --light-color: hsl(var(--primary-hue), 4%, 25%);
+  --surface-color: hsl(var(--primary-hue), 22%, 86%);
+  --background-color: hsl(var(--primary-hue), 25%, 12%);
 
   font-weight: 400;   /* TODO: Choose a variable font to take into account the weight diff */
 }
 
 .inverted {
-  --dark-color: var(--light-color)
+  --surface-color: var(--background-color)
 }
 
 /*  
@@ -145,7 +145,7 @@ main {
   scroll-behavior: smooth;
   border-width: 3px 0;
   border-style: solid;
-  border-color: var(--dark-color);
+  border-color: var(--surface-color);
 }
 
 /* ------------------------------------------------------------------------ 
@@ -162,7 +162,7 @@ section {
   gap: 20px;
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-bottom-color: var(--dark-color);
+  border-bottom-color: var(--surface-color);
 }
 
 main section:nth-child(2n + 1) {
@@ -171,7 +171,7 @@ main section:nth-child(2n + 1) {
 
 main section:nth-child(2n) {
   background-color: var(--primary-color-200);
-  color: var(--light-color);
+  color: var(--background-color);
 }
 
 main section:last-child {
@@ -208,16 +208,16 @@ form[name="contact-form"] > label {
 }
 
 form[name="contact-form"] > label > * {
-  background-color: var(--light-color);
+  background-color: var(--background-color);
   border: none;
-  border-bottom: 2px solid var(--dark-color);
+  border-bottom: 2px solid var(--surface-color);
   border-radius: 5px 0 5px 0;
   padding: 10px 5px;
   transition: box-shadow 0.15s ease-in-out;
 }
 
 form[name="contact-form"] > label > *:focus {
-  background-color: var(--light-color);
+  background-color: var(--background-color);
 }
 
 form[name="contact-form"] > label:has(*:focus) {
@@ -226,7 +226,7 @@ form[name="contact-form"] > label:has(*:focus) {
 
 button[type="submit"] {
   background-color: var(--primary-color-200);
-  color: var(--light-color);
+  color: var(--background-color);
   border: none;
   border-radius: 5px;
   padding: 12px 20px;
